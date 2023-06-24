@@ -26,12 +26,6 @@ local AUTOFARM  = Window:MakeTab({
 	PremiumOnly = false
 })
 
-local AUTOFARM  = Window:MakeTab({
-	Name = "AUTOFARM",
-	Icon = "rbxassetid://7733765592",
-	PremiumOnly = false
-})
-
 AUTOFARM:AddToggle({
 	Name = "AUTOFARM",
 	Callback = function()
@@ -51,24 +45,10 @@ local OtherScripts = Window:MakeTab({
 	PremiumOnly = false
 })
 
-OtherScripts:AddToggle({
-	Name = "MAX2007'S BABFT AUTOFARM GUI",
-	Callback = function()
-	print("autofarm enabled")
-			  local sound = Instance.new("Sound")
-			  sound.SoundId = "rbxassetid://452267918" -- 1841133289
-			  sound.Looped = false
-			  sound.Parent = workspace
-			  sound.Volume = 2
-			  sound:Play()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/max2007killer/script-quest-1-2-3/main/lua.lua"))()
-  	end    
-})
-
-OtherScripts:AddToggle({
+OtherScripts:AddButton({
 	Name = "XCU BABFT HUB",
 	Callback = function()
-	print("autofarm enabled")
+      		print("autofarm enabled")
 			  local sound = Instance.new("Sound")
 			  sound.SoundId = "rbxassetid://452267918" -- 1841133289
 			  sound.Looped = false
@@ -77,4 +57,4 @@ OtherScripts:AddToggle({
 			  sound:Play()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/WackyWorId/XCU-BABFT/main/Main.lua"))()
   	end    
-})
+})    
