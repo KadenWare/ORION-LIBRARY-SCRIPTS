@@ -1,0 +1,80 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+OrionLib:MakeNotification({
+	Name = "Notification: 1",
+	Content = "Kadan#6407's BABFT  (Build a boat for treasure) UI  has loaded.",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+wait(5)
+local sound = Instance.new("Sound")
+sound.SoundId = "rbxassetid://4471815571" -- 1841133289
+sound.Looped = false
+sound.Parent = workspace
+sound.Volume = 2
+sound:Play()
+local Window = OrionLib:MakeWindow({Name = "KADENS R2F MENU (ORION)", HidePremium = false, SaveConfig = true, ConfigFolder = "KADENS R2F MENU (ORION)", IntroEnabled = true, IntroText = "KADENS R2F MENU (ORION VERSION V.0.1)", IntroIcon = "rbxassetid://7743868000", Icon = "rbxassetid://7743868000"})
+
+local QUESTS  = Window:MakeTab({
+	Name = "QUESTS",
+	Icon = "rbxassetid://7733960981",
+	PremiumOnly = false
+})
+
+local AUTOFARM  = Window:MakeTab({
+	Name = "AUTOFARM",
+	Icon = "rbxassetid://7733765592",
+	PremiumOnly = false
+})
+
+local AUTOFARM  = Window:MakeTab({
+	Name = "AUTOFARM",
+	Icon = "rbxassetid://7733765592",
+	PremiumOnly = false
+})
+
+AUTOFARM:AddToggle({
+	Name = "AUTOFARM",
+	Callback = function()
+      		print("autofarm enabled")
+			  local sound = Instance.new("Sound")
+			  sound.SoundId = "rbxassetid://452267918" -- 1841133289
+			  sound.Looped = false
+			  sound.Parent = workspace
+			  sound.Volume = 2
+			  sound:Play()
+  	end    
+})
+
+local OtherScripts = Window:MakeTab({
+	Name = "OTHER GUI'S'",
+	Icon = "rbxassetid://7733765592",
+	PremiumOnly = false
+})
+
+OtherScripts:AddToggle({
+	Name = "MAX2007'S BABFT AUTOFARM GUI",
+	Callback = function()
+	print("autofarm enabled")
+			  local sound = Instance.new("Sound")
+			  sound.SoundId = "rbxassetid://452267918" -- 1841133289
+			  sound.Looped = false
+			  sound.Parent = workspace
+			  sound.Volume = 2
+			  sound:Play()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/max2007killer/script-quest-1-2-3/main/lua.lua"))()
+  	end    
+})
+
+OtherScripts:AddToggle({
+	Name = "XCU BABFT HUB",
+	Callback = function()
+	print("autofarm enabled")
+			  local sound = Instance.new("Sound")
+			  sound.SoundId = "rbxassetid://452267918" -- 1841133289
+			  sound.Looped = false
+			  sound.Parent = workspace
+			  sound.Volume = 2
+			  sound:Play()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/WackyWorId/XCU-BABFT/main/Main.lua"))()
+  	end    
+})
